@@ -1,0 +1,426 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; /* Hack para Box Model **/
+  /*  scroll-snap-type: y mandatory; */
+
+    scroll-behavior: smooth;
+
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+
+}
+/* iniciales en cuanto al root */
+
+:root {
+}
+
+/* globales  */
+.contenedor{
+    max-width: 90%;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,p,a{
+    padding: 0;
+    margin: 0;
+}
+h1{font-size: 3.2rem;}
+h2{font-size: 2.8rem;}
+h3{font-size: 2.4rem;}
+
+:root {
+  /* 🎨 Colores base de la marca Claro */
+  --rojo-claro: #E60000;       /* Rojo principal de Claro */
+  --rojo-oscuro: #B00020;      /* Rojo oscuro para hover o acento */
+  --gris-oscuro: #333333;      /* Texto principal / encabezados */
+  --gris-medio: #999999;       /* Texto secundario / detalles */
+  --gris-claro: #F5F5F5;       /* Fondo de secciones alternas */
+  --blanco: #FFFFFF;           /* Fondo principal / texto sobre rojo */
+  --negro: #000;
+  --borde-suave: #D9D9D9;      /* Líneas divisorias / bordes */
+  --sombra-suave: rgba(0, 0, 0, 0.1); /* Sombra ligera para tarjetas o navbar */
+  --fuente-principal: "Quicksand", sans-serif; /* Fuente principal */
+}
+.m-t{
+    margin-top: 15rem;
+}
+
+a, p , h1, h2, h3, h4, h5, h6, span{
+    font-family: var(--fuente-principal);
+}
+
+/* inicio de codigo , navegacion  */
+.navegacion__barra{
+    background-color: var(--rojo-claro);
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 8rem;
+    position: sticky;
+    top: 0;
+}
+.navegacion__logo{
+    width: 18rem;
+}
+.navegacion__inicio{
+    display: flex;
+    justify-content: space-around;
+    gap: 6rem;
+
+}
+.nav__enlace a{
+    color: var(--blanco);
+    font-size: 3rem;
+    font-weight: 700;
+}
+.nav__enlace{
+    transition: all .3s ease;
+    border-bottom: var(--blancoblanco);
+}
+.nav__enlace:hover{
+    border-bottom: .2rem solid var(--blanco);
+}
+
+/* inicio del hader */
+.hero{
+    background-image: url("/img/niebla.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+
+.header__contenedor h1{
+    color: var(--blanco);
+    text-align: center;
+    width: 60%;
+}
+
+.header__beneficios{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 6rem;
+    column-gap: 8rem;
+    margin-top: 4rem;
+    color: var(--blanco);
+    font-size: 2.5rem;
+}
+.header__bene{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.header__bene:nth-child(3){
+    grid-column: span 2;
+    justify-content: center;
+}
+.header__bene i{
+    color: var(--rojo-oscuro);
+    font-size: 5rem;
+}
+
+/*  servicios  */
+.servicios{
+    margin-top: 18rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    background-color: var(--negro);
+    padding: 7rem 0;
+}
+.servicios span{
+    color: var(--rojo-claro);
+}
+.servicios h2{
+    text-align: center;
+    font-size: 4rem;
+    color: var(--blanco);
+}
+.servicios__flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
+}
+.servicio__box{
+    width: 30rem;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    flex-direction: column;
+    gap: 2rem;
+
+    /* opcional borrar  */
+    background-color: var(--gris-oscuro);
+}
+.servicio__box:first-child{
+    box-shadow: -1.5rem -1.5rem 0 0 var(--rojo-claro);
+}
+.servicio__box:last-child{
+    box-shadow: 1.5rem 1.5rem 0rem 0rem var(--rojo-claro);
+
+}
+
+.servicio__box i{
+    font-size: 8rem;
+    color: var(--rojo-claro);
+}
+.servicio__box p{
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--blanco);
+}
+
+/* tipos de planes que hay */
+.main__contenedor{
+    
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 15rem auto;
+    height: 100rem;
+    /* border: 2px solid blue; */
+
+}
+.main__principal{
+}
+.main__planes{
+    width: 100%;
+    height: 9.4rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+}
+.planes p{
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+}
+.planes:hover{
+    background-color: rgba(246, 148, 148, 0.724);
+    cursor: pointer;
+}
+
+.planes{
+    /* border: 2px solid orange; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.planes__servicios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p_s{
+    font-size: 4rem;
+}
+
+/* parte de los cards  */
+.planes__1play, .planes__2play, .planes__3play{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+.planes__2play{
+    grid-template-columns: repeat(3,1fr);
+}
+.planes__3play .ft{
+    margin-top: 8.3rem;
+}
+.card{
+    border: .2rem solid var(--gris-medio);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 2.5rem;
+    padding: 4rem 0; 
+    border-radius: 3rem;
+}
+.icons{
+    display: flex;
+    gap: 2rem;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.icons .bi-plus-lg{
+    font-size: 4rem;
+    color: var(--rojo-claro);
+}
+.card__header{
+    font-size: 3rem;
+    color: var(--negro);
+    font-weight: 600;
+}
+.card i{
+    color: var(--negro);
+    font-size: 6rem;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+.card__velocidad{
+    font-size: 5rem;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+.card__bono{
+    font-size: 4rem;
+    color: var(--rojo-claro);
+    font-weight: 900;
+}
+.card__detalle{
+    font-size: 3rem;
+    color: var(--gris-oscuro);
+}
+.card__precio{
+    font-size: 4rem;
+    color: var(--negro);
+    font-weight: 700;
+}
+.card__precio span{
+    color: var(--gris-oscuro);
+    font-size: 3rem;
+}
+.card__precio-regular{
+    font-size: 2.5rem;
+}
+
+.descripciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    gap: 3rem;
+    padding: 0 3rem;
+    margin: 0 auto;
+}
+
+.card__descripcion{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.card__descripcion i{
+    font-size: 4.5rem;
+}
+.card__descripcion__llamadas,
+.card__descripcion__tv{
+    display: flex;
+    font-size: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2rem;
+}
+.card__descripcion__llamadas p,
+.card__descripcion__tv p{
+    font-size: 2.5rem;
+}
+.card__descripcion__llamadas p:first-child,
+.card__descripcion__tv p:first-child{
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+.card__descripcion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card__descripcion__tv{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+
+.card__button{
+    all: unset;
+    width: 28rem;
+    text-align: center;
+    color: var(--blanco);
+    background-color: var(--rojo-claro);
+    height: 5rem;
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    border-radius: 3rem;
+    transition: all .3s ease;
+}
+.card__button:hover{
+    background-color: var(--rojo-oscuro);
+    cursor: pointer;
+}
+
+/* footer */
+.footer{
+    margin: 0;
+    padding: 0;
+    background-color: var(--negro);
+    margin-top: 15rem;
+    height: 15rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 8rem;
+    justify-content: space-between;
+    /* position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1); */
+}
+.footer__logo{
+    width: 20rem;
+}
+.footer p{
+    color: var(--blanco);
+    font-size: 2rem;
+}
+
+
+/* atajos en cuanto a ocultar */
+.ocultar{
+    display: none;
+}
+
+.activo{
+    border-bottom: .6rem solid var(--rojo-claro);
+}

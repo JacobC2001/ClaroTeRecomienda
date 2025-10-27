@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claro Te Recomienda</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="svg/claro-peru-seeklogo.png" type="image/x-icon">
+</head>
+<body> 
+
+    <nav class="navegacion__barra">
+        <div class="navegacion__logo">
+            <img src="svg/claro_negocios_blanco.png" alt="logo claro">
+        </div>
+        <div class="navegacion__inicio">
+            <div class="nav__enlace">
+                <a href="#inicio">Inicio</a>
+            </div>
+            <div class="nav__enlace">
+                <a href="#nosotros">Nosotros</a>
+            </div>
+            <div class="nav__enlace">
+                <a href="#servicios">Servicios</a>
+            </div>
+            <div class="nav__enlace">
+                <a href="#planes">Planes</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header__contenedor hero" id="inicio">
+            <h1>Telefonía, Internet y Cable para tu negocio en un solo lugar, con conexión rápida, comunicación clara y atención personalizada.
+            </h1>
+            <div class="header__beneficios">
+                <div class="header__bene">
+                    <i class="bi bi-envelope-paper"></i>
+                    <p>Factura Electronica Web</p>
+                </div>
+                <div class="header__bene">
+                    <i class="bi bi-cloud-check"></i>
+                    <p>Claro Drive Negocio</p>
+                </div>
+                <div class="header__bene">
+                    <i class="bi bi-person-fill-check"></i>
+                    <p>Atención Personalizada</p>
+                </div>
+            </div>
+    </header> 
+
+    <!-- <section class="nosotros">
+
+        <div class="info__contenedor">
+            <div class="info__box">
+                <h2>¿Por qué elegir <span>Claro Negocios</span>?</h2>
+                <p>En Claro Negocios, entendemos las necesidades únicas de tu empresa. Ofrecemos soluciones integrales de telecomunicaciones que incluyen Internet de alta velocidad, telefonía confiable y televisión empresarial. Nuestro compromiso es brindarte un servicio excepcional con atención personalizada, para que puedas concentrarte en hacer crecer tu negocio mientras nosotros nos encargamos de mantenerte conectado.</p>
+            </div>
+            <div class="info__box">
+                <img src="svg/atencion_personalizada.svg" alt="atencion personalizada">
+            </div>
+        </div>       
+    </section>  -->
+
+    <section class="servicios" id="servicios">
+        <h2>Tenemos lo que <span>necesitas</span></h2>
+        <div class="servicios__flex">
+            <div class="servicio__box">
+                <i class="bi bi-router"></i>
+                <p>Internet</p>
+            </div>
+            <div class="servicio__box">
+                <i class="bi bi-telephone-inbound"></i>
+                <p>Telefonia</p>
+            </div>
+            <div class="servicio__box">
+                <i class="bi bi-tv"></i>
+                <p>Television</p>
+            </div>
+        </div>
+    </section>
+
+    <main class="main__contenedor" id="planes">
+        <div class="main__principal">
+           <div class="main__planes">
+                <div class="planes activo" data-target="planes__1play" id="plan1">
+                    <p>1 PLAY: INTERNET</p>
+                </div>
+                <div class="planes " data-target="planes__2play" id="plan2">
+                    <p>2 PLAY: INTERNET + FIJO</p>
+                </div>
+                <div class="planes" data-target="planes__3play" id="plan3">
+                    <p>3 PLAY: INTERNET + FIJO + TELEVISION</p>
+                </div>
+            </div>
+            <div class="planes__1play ">
+                    
+                    <div class="card">
+                        <p class="card__header">INTERNET</p>
+                        <i class="bi bi-wifi"></i>
+                        <h4 class="card__velocidad">200 MBPS</h4>
+                        <p class="card__bono">BONO +200 MBPS</p>
+                        <p class="card__detalle">por 6 meses</p>
+                        <p class="card__precio">S/ 69.00 <span>/ mes</span></p>
+                        <a href="https://wa.me/51965290844?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20planes%20de%20internet" class="card__link">
+                        <button class="card__button">LO QUIERO</button>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <p class="card__header">INTERNET</p>
+                        <i class="bi bi-lightning-charge"></i>
+                        <h4 class="card__velocidad">300 MBPS</h4>
+                        <p class="card__bono">BONO +300 MBPS</p>
+                        <p class="card__detalle">por 6 meses</p>
+                        <p class="card__precio">S/ 79.00 <span>/ mes</span></p>
+                        <a href="https://wa.me/51965290844?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20planes%20de%20internet" class="card__link">
+                        <button class="card__button">LO QUIERO</button>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <p class="card__header">INTERNET</p>
+                        <i class="bi bi-speedometer2"></i>
+                        <h4 class="card__velocidad">400 MBPS</h4>
+                        <p class="card__bono">BONO +1000 MBPS</p>
+                        <p class="card__detalle">por 12 meses</p>
+                        <p class="card__precio">S/ 89.00 <span>/ mes</span></p>
+                        <a href="https://wa.me/51965290844?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20planes%20de%20internet" class="card__link">
+                        <button class="card__button">LO QUIERO</button>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <p class="card__header">INTERNET</p>
+                        <i class="bi bi-router"></i>
+                        <h4 class="card__velocidad">800 MBPS</h4>
+                        <p class="card__bono">BONO +1000 MBPS</p>
+                        <p class="card__detalle">por 12 meses</p>
+                        <p class="card__precio">S/ 100.00 <span>/ mes</span></p>
+                        <a href="https://wa.me/51965290844?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20planes%20de%20internet" class="card__link">
+                        <button class="card__button">LO QUIERO</button>
+                        </a>
+
+                    </div>
+
+                
+            </div> 
+
+            <div class="planes__2play ocultar">
+
+                <div class="card">
+                    <div class="icons">
+                        <i class="bi bi-wifi"></i>
+                        <i class="bi bi-plus-lg"></i>
+                        <i class="bi bi-telephone"></i>
+                    </div>
+                    <h4 class="card__velocidad">200 MBPS</h4>
+                    <p class="card__bono">BONO 200 MBPS</p>
+                    <p class="card__detalle">Promoción vigente</p>
+                    <p class="card__precio">S/ 74.00</p>
+                    <div class="card__descripcion">
+                        <i class="bi bi-telephone-fill"></i>
+                        <div class="card__descripcion__llamadas">
+                            <p>Llamadas ilimitadas a Claro</p>
+                            <p>5000 minutos</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/51965290844?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20planes%20de%20internet%20y%20telefon%C3%ADa">
+                        <button class="card__button">LO QUIERO</button>
+                    </a>
+                </div>
+
+                <div class="card">
+                        <div class="icons">
+                            <i class="bi bi-wifi"></i>
+                            <i class="bi bi-plus-lg"></i>
+                            <i class="bi bi-telephone"></i>
+                        </div>
+                        <h4 class="card__velocidad">300 MBPS</h4>
+                        <p class="card__bono">BONO 300 MBPS</p>
+                        <p class="card__detalle">x 3 meses</p>
+                        <p class="card__precio">S/ 64.00 <span>x 3 meses</span></p>
+                        <p class="card__precio-regular">Luego: S/ 84.00 al mes</p>
+                        <div class="card__descripcion">
+                            <i class="bi bi-telephone-fill"></i>
+                            <div class="card__descripcion__llamadas">
+                                <p>Llamadas ilimitadas a Claro</p>
+                                <p>5000 minutos</p>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/51965290844?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20planes%20de%20internet%20y%20telefon%C3%ADa">
+                            <button class="card__button">LO QUIERO</button>
+                        </a>
+                </div>
+
+                <div class="card">
+                <div class="icons">
+                    <i class="bi bi-wifi"></i>
+                    <i class="bi bi-plus-lg"></i>
+                    <i class="bi bi-telephone"></i>
+                </div>
+                <h4 class="card__velocidad">800 MBPS</h4>
+                <p class="card__bono">BONO 1000 MBPS</p>
+                <p class="card__detalle">x 3 meses</p>
+                <p class="card__precio">S/ 84.90 <span>x 3 meses</span></p>
+                <p class="card__precio-regular">Luego: S/ 94.00 al mes</p>
+                <div class="card__descripcion">
+                    <i class="bi bi-telephone-fill"></i>
+                    <div class="card__descripcion__llamadas">
+                        <p>Llamadas ilimitadas a Claro</p>
+                        <p>5000 minutos</p>
+                    </div>
+                </div>
+                <a href="https://wa.me/51965290844?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20planes%20de%20internet%20y%20telefon%C3%ADa">
+                    <button class="card__button">LO QUIERO</button>
+                </a>
+                </div>
+
+
+            </div>
+
+            <div class="planes__3play ocultar">
+                <div class="card">
+                <div class="icons">
+                    <i class="bi bi-wifi"></i>
+                    <i class="bi bi-plus-lg"></i>
+                    <i class="bi bi-telephone"></i>
+                    <i class="bi bi-plus-lg"></i>
+                    <i class="bi bi-tv"></i>
+                </div>
+                <h4 class="card__velocidad">200 MBPS</h4>
+                <p class="card__bono">BONO 200 MBPS</p>
+                <p class="card__detalle">x 6 meses</p>
+                <!-- <p class="card__detalle">Promoción vigente</p> -->
+                <p class="card__precio">S/ 155.00</p>
+               <div class="descripciones">
+                <div class="card__descripcion">
+                    <i class="bi bi-telephone-fill"></i>
+                    <div class="card__descripcion__llamadas">
+                        <p>Llamadas ilimitadas a Claro</p>
+                        <p>5000 minutos</p>
+                    </div>
+                </div>
+                <div class="card__descripcion">
+                    <i class="bi bi-tv-fill"></i>  
+                    <div class="card__descripcion__tv">
+                        <p>TV Estandar Pro</p>
+                        <p>105 Canales</p>
+                    </div>
+                </div>
+                </div>
+                <a href="https://wa.me/51965290844?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20planes%20de%20internet%2C%20telefon%C3%ADa%20y%20cable">
+                    <button class="card__button ft">LO QUIERO</button>
+                </a>
+                </div>
+
+                <div class="card">
+            <div class="icons">
+                    <i class="bi bi-wifi"></i>
+                    <i class="bi bi-plus-lg"></i>
+                    <i class="bi bi-telephone"></i>
+                    <i class="bi bi-plus-lg"></i>
+                    <i class="bi bi-tv"></i>
+                </div>
+            <h4 class="card__velocidad">300 MBPS</h4>
+            <p class="card__bono">BONO 300 MBPS</p>
+            <p class="card__detalle">x 3 meses</p>
+            <p class="card__precio">S/ 104.00 <span>x 3 meses</span></p>
+            <p class="card__precio-regular">Luego: S/ 165.00 al mes</p>
+            <div class="descripciones">
+                <div class="card__descripcion">
+                    <i class="bi bi-telephone-fill"></i>
+                    <div class="card__descripcion__llamadas">
+                        <p>Llamadas ilimitadas a Claro</p>
+                        <p>5000 minutos</p>
+                    </div>
+                </div>
+                <div class="card__descripcion">
+                    <i class="bi bi-tv-fill"></i>  
+                    <div class="card__descripcion__tv">
+                        <p>TV Estandar Pro</p>
+                        <!-- <p>105 Canales</p> -->
+                    </div>
+                </div>
+                </div>
+            <a href="https://wa.me/51965290844?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20planes%20de%20internet%2C%20telefon%C3%ADa%20y%20cable">
+                <button class="card__button">LO QUIERO</button>
+            </a>
+            </div>
+
+
+        <div   div class="card">
+            <div class="icons">
+                    <i class="bi bi-wifi"></i>
+                    <i class="bi bi-plus-lg"></i>
+                    <i class="bi bi-telephone"></i>
+                    <i class="bi bi-plus-lg"></i>
+                    <i class="bi bi-tv"></i>
+                </div>
+            <h4 class="card__velocidad">400 MBPS</h4>
+            <p class="card__bono">BONO 1000 MBPS</p>
+            <p class="card__detalle">x 6 meses</p>
+            <p class="card__precio">S/ 87.50 <span>x 6 meses</span></p>
+            <p class="card__precio-regular">Luego: S/ 175.00 al mes</p>
+            <div class="descripciones">
+                <div class="card__descripcion">
+                    <i class="bi bi-telephone-fill"></i>
+                    <div class="card__descripcion__llamadas">
+                        <p>Llamadas ilimitadas a Claro</p>
+                        <p>5000 minutos</p>
+                    </div>
+                </div>
+                <div class="card__descripcion">
+                    <i class="bi bi-tv-fill"></i>  
+                    <div class="card__descripcion__tv">
+                        <p>TV Estandar Pro</p>
+                        <!-- <p>105 Canales</p> -->
+                    </div>
+                </div>
+                </div>
+            <a href="https://wa.me/51965290844?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20planes%20de%20internet%2C%20telefon%C3%ADa%20y%20cable">
+                <button class="card__button">LO QUIERO</button>
+            </a>
+        </div>
+
+
+        <div class="card">
+            <div class="icons">
+                    <i class="bi bi-wifi"></i>
+                    <i class="bi bi-plus-lg"></i>
+                    <i class="bi bi-telephone"></i>
+                    <i class="bi bi-plus-lg"></i>
+                    <i class="bi bi-tv"></i>
+                </div>
+            <h4 class="card__velocidad">800 MBPS</h4>
+            <p class="card__bono">BONO 1000 MBPS</p>
+            <p class="card__detalle">x 6 meses</p>
+            <p class="card__precio">S/ 95.00 <span>x 6 meses</span></p>
+            <p class="card__precio-regular">Luego: S/ 190.00 al mes</p>
+                <div class="descripciones">
+                <div class="card__descripcion">
+                    <i class="bi bi-telephone-fill"></i>
+                    <div class="card__descripcion__llamadas">
+                        <p>Llamadas ilimitadas a Claro</p>
+                        <p>5000 minutos</p>
+                    </div>
+                </div>
+                <div class="card__descripcion">
+                    <i class="bi bi-tv-fill"></i>  
+                    <div class="card__descripcion__tv">
+                        <p>TV Estandar Pro</p>
+                        <!-- <p>105 Canales</p> -->
+                    </div>
+                </div>
+                </div>
+            <a href="https://wa.me/51965290844?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20planes%20de%20internet%2C%20telefon%C3%ADa%20y%20cable">
+                <button class="card__button">LO QUIERO</button>
+            </a>
+        </div>
+
+
+
+            </div>
+
+            <dic>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer__logo">
+            <img src="svg/claro_negocios_blanco.png" alt="">
+        </div>
+        <p>© 2025 Claro Negocios (Proyecto no oficial). Sitio web desarrollado por Jacob.</p>
+    </footer>
+
+    <script src="js/planes__funcion.js"></script>
+</body>
+</html>
